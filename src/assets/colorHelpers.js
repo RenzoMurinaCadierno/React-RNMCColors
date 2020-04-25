@@ -25,7 +25,7 @@ function generatePalette(starterPalette) {
         hex: scale[c],
         rgb: chroma(scale[c]).css(),
         rgba: chroma(scale[c]).css()
-          .replace('rbg', 'rgba').replace(')', ',1.0)')
+          .replace('rgb', 'rgba').replace(')', ',1.0)')
       })
     }
   }
@@ -35,7 +35,7 @@ function generatePalette(starterPalette) {
 
 function getRange(hexColor) {
   
-  const end = '#fff'
+  // const end = '#fff'
 
   return [
     chroma(hexColor).darken(1.4).hex(),
