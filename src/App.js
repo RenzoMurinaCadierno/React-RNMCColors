@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Palette palette={generatePalette(initialPalettes[4])} />
+      <Palette palette={generatePalette(initialPalettes[0])} />
     </div>
   );
 }
