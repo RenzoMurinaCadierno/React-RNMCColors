@@ -15,7 +15,9 @@ function App() {
     <Switch>
       <Route 
         exact path='/' 
-        render={() => <PaletteList palettes={initialPalettes} />} 
+        render={routeProps => 
+          <PaletteList palettes={initialPalettes} {...routeProps} />
+        }
       />
       <Route 
         exact path='/palette/:id' 
