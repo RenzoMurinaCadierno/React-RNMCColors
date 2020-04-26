@@ -36,7 +36,8 @@ export default class SingleColorPalette extends Component {
 
     const colorBoxes = this._shades.map(c => (
       <ColorBox 
-        key={c.name} name={c.name} bgColor={c[format]} showLink={false} 
+        key={c.name} name={c.name} 
+        bgColor={c[format]} showFullPalette={false} 
       />
     ))
 

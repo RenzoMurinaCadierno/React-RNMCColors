@@ -23,7 +23,7 @@ class Palette extends Component {
     const colorBoxes = colors[level].map(c =>
       <ColorBox 
         key={c.id} bgColor={c[format]} name={c.name} 
-        moreUrl={`/palette/${id}/${c.id}`} showLink={true}
+        moreUrl={`/palette/${id}/${c.id}`} showFullPalette
       />
     )
 
