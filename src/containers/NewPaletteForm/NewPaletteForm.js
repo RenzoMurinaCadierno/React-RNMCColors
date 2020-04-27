@@ -80,7 +80,7 @@ class NewPaletteForm extends Component {
   constructor(props) {
     super(props)
     this.state = { 
-      open: true, currentColor: 'red', colors: [ {color:'blue', name:'blue'} ], newName: ''
+      open: true, currentColor: '', colors: [], newName: ''
     }
   }
 
@@ -102,7 +102,6 @@ class NewPaletteForm extends Component {
   }
 
   createColor = () => {
-    console.log('asd')
     const newColor = { 
       color: this.state.currentColor,
       name: this.state.newName 
@@ -111,6 +110,17 @@ class NewPaletteForm extends Component {
       colors: [...this.state.colors, newColor],
       newName: ''
     })
+  }
+
+  handleSubmit = () => {
+    let newName = 'New Test Palette'
+    const newPalette = {
+      id: newName.toLowerCase().replace(/ /g, '-'),
+      paletteName: newName,
+      colors: this.state.colors
+    }
+    this.props.savePalette(newPalette)
+    this.props.history.push('/')
   }
 
   handleChange = ({ target: { value } }) => (
@@ -134,6 +144,7 @@ class NewPaletteForm extends Component {
         <CssBaseline />
         <AppBar
           position="fixed"
+          color='default'
           className={classNames(classes.appBar, {
             [classes.appBarShift]: open,
           })}
@@ -150,6 +161,9 @@ class NewPaletteForm extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
+            <Button variant='contained' color='primary' onClick={this.handleSubmit}> 
+              Save Palette 
+            </Button>
           </Toolbar>
         </AppBar>
         <Drawer
