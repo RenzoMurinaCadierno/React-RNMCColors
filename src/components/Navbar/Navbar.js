@@ -9,7 +9,6 @@ import CloseIcon from '@material-ui/icons/Close'
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
 import styles from './Navbar.styles'
-// import './Navbar.css'
 
 class Navbar extends Component {
 
