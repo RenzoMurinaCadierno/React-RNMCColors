@@ -5,17 +5,20 @@ import styles from './DraggableColorBox.styles'
 
 function DraggableColorBox(props) {
 
-  const { classes } = props
+  const { classes, name, color, handleClick } = props
 
   return (
     <div 
-      style={{ backgroundColor: props.color}}
+      style={{ backgroundColor: color}}
       className={classes.DraggableColorBox}
     >
       <div className={classes.BoxContent}>
-        <span> {props.name} </span>
+        <span> {name} </span>
         <span> 
-          <DeleteOutlinedIcon className={classes.DeleteIcon}/> 
+          <DeleteOutlinedIcon 
+            className={classes.DeleteIcon}
+            onClick={handleClick}
+          /> 
         </span>
       </div>
     </div>
