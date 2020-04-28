@@ -1,21 +1,25 @@
 export default {
   root: {
     backgroundColor: 'rgba(255, 255, 255, 0.6)',
-    border: '1px solid black',
+    // border: '1px solid black',
     borderRadius: '5px',
     padding: '0.5rem',
     position: 'relative',
     overflow: 'hidden',
+    boxShadow: '0 0 3px grey, 0 0 5px white',
     "& :hover": {
       cursor: 'pointer'
     }
   },
   colors: {
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     height: '150px',
     width: '100%',
     borderRadius: '5px',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    boxShadow: '0 0 7px black, 0 0 8px grey',
+    display: 'flex',
+    flexWrap: 'wrap'
   },
   title: {
     display: 'flex',
@@ -25,7 +29,7 @@ export default {
     color: 'black',
     paddingTop: '0.5rem',
     fontSize: '0.8rem',
-    position: 'relative'
+    position: 'relative',
   },
   emoji: {
     marginLeft: '0.5rem',
@@ -34,9 +38,9 @@ export default {
   miniColor: {
     height: '25%',
     width: '20%',
-    display: 'inline-block',
-    margin: '0 auto',
-    position: 'relative',
-    marginBottom: '-4.5px'
+    // display: 'inline-block',
+    // margin: '0 auto',
+    // position: 'relative',
+    // marginBottom: '-5px'
   }
 }
