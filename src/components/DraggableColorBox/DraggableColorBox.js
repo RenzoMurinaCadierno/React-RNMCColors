@@ -1,5 +1,6 @@
 import React from 'react'
 import { withStyles } from '@material-ui/styles'
+import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
 import styles from './DraggableColorBox.styles'
 
 function DraggableColorBox(props) {
@@ -11,7 +12,12 @@ function DraggableColorBox(props) {
       style={{ backgroundColor: props.color}}
       className={classes.DraggableColorBox}
     >
-      {props.name}
+      <div className={classes.BoxContent}>
+        <span> {props.name} </span>
+        <span> 
+          <DeleteOutlinedIcon className={classes.DeleteIcon}/> 
+        </span>
+      </div>
     </div>
   )
 }
