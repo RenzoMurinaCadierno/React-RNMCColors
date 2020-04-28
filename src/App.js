@@ -14,14 +14,12 @@ class App extends Component {
     super(props)
     this.state = { palettes: initialPalettes }
   }
-  
 
   findPalette = id =>
     this.state.palettes.find(palette => palette.id === id)
 
-  savePalette = newPalette => {
+  savePalette = newPalette =>
     this.setState({ palettes: [...this.state.palettes, newPalette] })
-  }
 
   render() {
     return (
@@ -30,7 +28,9 @@ class App extends Component {
           exact path='/palette/new'
           render={routeProps => 
             <NewPaletteForm 
-              savePalette={this.savePalette} {...routeProps} 
+              savePalette={this.savePalette} 
+              palettes={this.state.palettes}
+              {...routeProps} 
             />
           }
         />
