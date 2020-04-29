@@ -1,22 +1,23 @@
-import { drawerWidth } from '../../assets/globalStylesVars'
+import { drawerWidth } from "../../assets/globalStylesVars"
 
-export default theme => ({
+export default (theme) => ({
   root: {
-    display: 'flex'
+    display: "flex",
   },
   appBar: {
-    transition: theme.transitions.create(['margin', 'width'], {
+    transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    height: '64px',
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "64px",
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
-    transition: theme.transitions.create(['margin', 'width'], {
+    transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
@@ -26,5 +27,12 @@ export default theme => ({
     marginRight: 20,
   },
   NavButtons: {
-  }
+    marginRight: "1rem",
+    "& a": {
+      textDecoration: "none",
+    },
+  },
+  Button: {
+    margin: "0 0.5rem",
+  },
 })

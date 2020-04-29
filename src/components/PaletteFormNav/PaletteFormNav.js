@@ -15,8 +15,10 @@ import styles from "./PaletteFormNav.styles"
 class PaletteFormNav extends Component {
   constructor(props) {
     super(props)
-    this.state = { newPaletteName: "" }
+    this.state = { newPaletteName: "", showForm: false }
   }
+
+  showForm = () => this.setState({ showForm: true })
 
   render() {
     const {
@@ -51,12 +53,29 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.NavButtons}>
-            <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} />
             <Link to="/">
-              <Button variant="contained" color="secondary">
+              <Button
+                className={classes.Button}
+                variant="contained"
+                color="secondary"
+              >
                 Back to Palettes
               </Button>
             </Link>
+            <Button
+              className={classes.Button}
+              variant="contained"
+              color="primary"
+              onClick={this.showForm}
+            >
+              Save Palette
+            </Button>
+            {this.state.showForm && (
+              <PaletteMetaForm
+                palettes={palettes}
+                handleSubmit={handleSubmit}
+              />
+            )}
           </div>
         </AppBar>
       </div>
