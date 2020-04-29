@@ -57,7 +57,7 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.NavButtons}>
-            {/* <ValidatorForm onSubmit={() => handleSubmit(newPaletteName)}>
+            <ValidatorForm onSubmit={() => handleSubmit(newPaletteName)}>
               <TextValidator
                 label="Palette name"
                 name="newPaletteName"
@@ -72,7 +72,7 @@ class PaletteFormNav extends Component {
               <Button variant="contained" color="primary" type="submit">
                 Save Palette
               </Button>
-            </ValidatorForm> */}
+            </ValidatorForm>
             <Link to="/">
               <Button variant="contained" color="secondary">
                 Back to Palettes

@@ -26,6 +26,5 @@ export default theme => ({
     marginRight: 20,
   },
   NavButtons: {
-
   }
 })
