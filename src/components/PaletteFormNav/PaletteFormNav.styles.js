@@ -1,8 +1,11 @@
-import { drawerWidth } from "../../assets/globalStylesVars"
+import { DRAWER_WIDTH } from "../../assets/globalVariables"
 
 export default (theme) => ({
   root: {
     display: "flex",
+  },
+  hide: {
+    display: "none",
   },
   appBar: {
     transition: theme.transitions.create(["margin", "width"], {
@@ -15,8 +18,8 @@ export default (theme) => ({
     height: "64px",
   },
   appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
+    width: `calc(100% - ${DRAWER_WIDTH}px)`,
+    marginLeft: DRAWER_WIDTH,
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,

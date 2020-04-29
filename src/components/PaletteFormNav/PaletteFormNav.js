@@ -28,7 +28,7 @@ class PaletteFormNav extends Component {
       open,
       handleSubmit,
       handleDrawerOpen,
-      palettes,
+      palettes
     } = this.props
 
     return (
@@ -38,7 +38,7 @@ class PaletteFormNav extends Component {
           position="fixed"
           color="default"
           className={classNames(classes.appBar, {
-            [classes.appBarShift]: open,
+            [classes.appBarShift]: open
           })}
         >
           <Toolbar disableGutters={!open}>
@@ -46,7 +46,9 @@ class PaletteFormNav extends Component {
               color="inherit"
               aria-label="Open drawer"
               onClick={handleDrawerOpen}
-              className={classNames(classes.menuButton, open && classes.hide)}
+              className={classNames(classes.menuButton, {
+                [classes.hide]: open
+              })}
             >
               <MenuIcon />
             </IconButton>
