@@ -1,3 +1,5 @@
+import sizes from "../../assets/mediaQueries"
+
 export default {
   root: {
     backgroundColor: "blue",
@@ -7,9 +9,18 @@ export default {
     justifyContent: "center"
   },
   container: {
-    width: "80%",
+    width: "50%",
     display: "flex",
-    flexFlow: "column wrap"
+    flexFlow: "column wrap",
+    [sizes.down("xl")]: {
+      width: "70%"
+    },
+    [sizes.down("lg")]: {
+      width: "80%"
+    },
+    [sizes.down("xs")]: {
+      width: "75%"
+    }
   },
   nav: {
     display: "flex",
@@ -25,7 +36,20 @@ export default {
     boxSizing: "border-box",
     width: "100%",
     display: "grid",
-    gridTemplateColumns: "repeat(3, 30%)",
-    gridGap: "5%"
+    gridGap: "1.5rem",
+    gridTemplateColumns: "repeat(4, 25%)",
+    [sizes.down("xl")]: {
+      gridTemplateColumns: "repeat(4, 25%)"
+    },
+    [sizes.down("lg")]: {
+      gridTemplateColumns: "repeat(3, 30%)"
+    },
+    [sizes.down("sm")]: {
+      gridTemplateColumns: "repeat(2, 50%)"
+    },
+    [sizes.down("xs")]: {
+      gridTemplateColumns: "repeat(1, 100%)",
+      padding: "20px"
+    }
   }
 }
