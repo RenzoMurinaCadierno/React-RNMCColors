@@ -1,12 +1,16 @@
 import sizes from "../../assets/mediaQueries"
+import bgImg from "../../assets/background.svg"
 
 export default {
   root: {
-    backgroundColor: "blue",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
-    justifyContent: "center"
+    justifyContent: "center",
+    overflow: "scroll",
+    backgroundColor: "4e#080e",
+    backgroundImage: `url(${bgImg})`
+    /* background by SVGBackgrounds.com */
   },
   container: {
     width: "50%",
@@ -22,6 +26,10 @@ export default {
       width: "75%"
     }
   },
+  h1: {
+    color: "black",
+    fontSize: "1.4rem"
+  },
   nav: {
     display: "flex",
     width: "100%",
@@ -29,7 +37,8 @@ export default {
     alignItems: "center",
     color: "white",
     "& a": {
-      color: "white"
+      color: "black",
+      fontWeight: 400
     }
   },
   palettes: {
@@ -49,7 +58,7 @@ export default {
     },
     [sizes.down("xs")]: {
       gridTemplateColumns: "repeat(1, 100%)",
-      padding: "20px"
+      padding: "5px 20px 20px 20px"
     }
   }
 }
