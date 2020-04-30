@@ -53,7 +53,7 @@ class PaletteFormNav extends Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              Create a palette
+              Create palette
             </Typography>
           </Toolbar>
           <div className={classes.NavButtons}>
@@ -63,7 +63,7 @@ class PaletteFormNav extends Component {
                 variant="contained"
                 color="secondary"
               >
-                Back to Palettes
+                Back
               </Button>
             </Link>
             <Button
@@ -72,7 +72,7 @@ class PaletteFormNav extends Component {
               color="primary"
               onClick={this.showForm}
             >
-              Save Palette
+              Save
             </Button>
             {this.state.showForm && (
               <PaletteMetaForm
