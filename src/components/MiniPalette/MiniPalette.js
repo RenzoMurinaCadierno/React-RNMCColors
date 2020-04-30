@@ -4,9 +4,6 @@ import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone"
 import styles from "./MiniPalette.styles"
 
 class MiniPalette extends Component {
-  constructor(props) {
-    super(props)
-  }
   deletePalette = (e) => {
     e.stopPropagation()
     this.props.deletePalette(this.props.id)
