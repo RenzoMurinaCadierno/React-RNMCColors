@@ -10,7 +10,7 @@ import classNames from "classnames"
 import PaletteFormNav from "../../components/PaletteFormNav/PaletteFormNav"
 import ColorpickerForm from "../../components/ColorpickerForm/ColorpickerForm"
 import DraggableColorList from "../../components/DraggableColorList/DraggableColorList"
-import { arrayMove } from "react-sortable-hoc"
+import arrayMove from "array-move"
 import styles from "./NewPaletteForm.styles"
 
 class NewPaletteForm extends Component {
@@ -21,14 +21,14 @@ class NewPaletteForm extends Component {
     this.state = {
       open: true,
       currentColor: "",
-      colors: this.props.palettes[0].colors,
+      colors: this.props.palettes[0].colors
     }
   }
 
   createColor = (newColor) => {
     this.setState({
       colors: [...this.state.colors, newColor],
-      newColorName: "",
+      newColorName: ""
     })
   }
 
@@ -45,13 +45,13 @@ class NewPaletteForm extends Component {
 
   removeColor = (colorName) => {
     this.setState({
-      colors: this.state.colors.filter((c) => c.name !== colorName),
+      colors: this.state.colors.filter((c) => c.name !== colorName)
     })
   }
 
   onSortEnd = ({ oldIndex, newIndex }) => {
     this.setState(({ colors }) => ({
-      colors: arrayMove(colors, oldIndex, newIndex),
+      colors: arrayMove(colors, oldIndex, newIndex)
     }))
   }
 
@@ -132,7 +132,7 @@ class NewPaletteForm extends Component {
         </Drawer>
         <main
           className={classNames(classes.content, {
-            [classes.contentShift]: open,
+            [classes.contentShift]: open
           })}
         >
           <div className={classes.drawerHeader} />

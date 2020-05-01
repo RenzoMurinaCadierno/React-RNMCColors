@@ -2,6 +2,15 @@ import sizes from "../../assets/mediaQueries"
 import bgImg from "../../assets/background.svg"
 
 export default {
+  "@global": {
+    ".fade-exit": {
+      opacity: 1
+    },
+    ".fade-exit-active": {
+      opacity: 0,
+      transition: "opacity 1s ease-out"
+    }
+  },
   root: {
     height: "100vh",
     display: "flex",
