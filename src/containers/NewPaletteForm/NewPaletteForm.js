@@ -41,8 +41,19 @@ class NewPaletteForm extends Component {
         ? this.props.palettes.map((p) => p.colors).flat()
         : this.state.colors
 
-    const rnd = Math.floor(Math.random() * allColors.length)
-    const rndColor = allColors[rnd]
+    // let rnd = Math.floor(Math.random() * allColors.length)
+    // let rndColor = allColors[rnd]
+
+    let rnd, rndColor
+    let isDupeColor = true
+
+    while (isDupeColor) {
+      rnd = Math.floor(Math.random() * allColors.length)
+      rndColor = allColors[rnd]
+      isDupeColor = this.state.colors.some(
+        (color) => color.name === rndColor.name
+      )
+    }
 
     this.setState({ colors: [...this.state.colors, rndColor] })
   }
