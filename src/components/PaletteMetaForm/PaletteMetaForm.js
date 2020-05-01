@@ -38,9 +38,10 @@ class PaletteMetaForm extends Component {
   savePalette = (emojiPickerObj) => {
     const newPalette = {
       paletteName: this.state.newPaletteName,
-      emoji: emojiPickerObj.native,
+      emoji: emojiPickerObj.native
     }
     this.props.handleSubmit(newPalette)
+    this.setState({ stage: "" })
   }
 
   render() {
@@ -76,7 +77,7 @@ class PaletteMetaForm extends Component {
                 validators={["required", "isUniquePaletteName"]}
                 errorMessages={[
                   "Palette name cannnot be empty",
-                  "Palette name already used",
+                  "Palette name already used"
                 ]}
               />
             </DialogContent>
