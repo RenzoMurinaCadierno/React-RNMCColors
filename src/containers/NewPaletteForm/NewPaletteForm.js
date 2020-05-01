@@ -11,6 +11,7 @@ import PaletteFormNav from "../../components/PaletteFormNav/PaletteFormNav"
 import ColorpickerForm from "../../components/ColorpickerForm/ColorpickerForm"
 import DraggableColorList from "../../components/DraggableColorList/DraggableColorList"
 import arrayMove from "array-move"
+import initialPalettes from "../../assets/initialPalettes"
 import styles from "./NewPaletteForm.styles"
 
 class NewPaletteForm extends Component {
@@ -21,7 +22,7 @@ class NewPaletteForm extends Component {
     this.state = {
       open: true,
       currentColor: "",
-      colors: this.props.palettes[0].colors
+      colors: initialPalettes[0].colors
     }
   }
 
@@ -35,7 +36,10 @@ class NewPaletteForm extends Component {
   clearColors = () => this.setState({ colors: [] })
 
   addRandomColor = () => {
-    const allColors = this.props.palettes.map((p) => p.colors).flat()
+    const allColors =
+      this.props.palettes.length > 0
+        ? this.props.palettes.map((p) => p.colors).flat()
+        : this.state.colors
 
     const rnd = Math.floor(Math.random() * allColors.length)
     const rndColor = allColors[rnd]

@@ -30,6 +30,7 @@ class PaletteFormNav extends Component {
       handleDrawerOpen,
       palettes
     } = this.props
+    const { showForm } = this.state
 
     return (
       <div className={classes.root}>
@@ -74,7 +75,7 @@ class PaletteFormNav extends Component {
             >
               Save
             </Button>
-            {this.state.showForm && (
+            {showForm && (
               <PaletteMetaForm
                 palettes={palettes}
                 handleSubmit={handleSubmit}
