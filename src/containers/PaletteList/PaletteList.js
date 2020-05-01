@@ -2,9 +2,6 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import { withStyles } from "@material-ui/styles"
 import Dialog from "@material-ui/core/Dialog"
-import DialogActions from "@material-ui/core/DialogActions"
-import DialogContent from "@material-ui/core/DialogContent"
-import DialogContentText from "@material-ui/core/DialogContentText"
 import Avatar from "@material-ui/core/Avatar"
 import DialogTitle from "@material-ui/core/DialogTitle"
 import List from "@material-ui/core/List"
@@ -53,7 +50,7 @@ class PaletteList extends Component {
           </nav>
           <TransitionGroup className={classes.palettes}>
             {palettes.map((palette) => (
-              <CSSTransition key={palette.id} classNames="fade" timeout={1000}>
+              <CSSTransition key={palette.id} classNames="fade" timeout={500}>
                 <MiniPalette
                   {...palette}
                   key={palette.id}
