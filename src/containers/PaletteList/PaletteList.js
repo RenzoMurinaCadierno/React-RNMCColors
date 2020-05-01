@@ -41,14 +41,8 @@ class PaletteList extends Component {
   }
 
   render() {
-    const {
-      palettes,
-      classes,
-      deletePalette
-      // isDeleteDialogOpened
-    } = this.props
-
-    const { isDeleteDialogOpened, paletteToDeleteId } = this.state
+    const { palettes, classes } = this.props
+    const { isDeleteDialogOpened } = this.state
 
     return (
       <div className={classes.root}>
