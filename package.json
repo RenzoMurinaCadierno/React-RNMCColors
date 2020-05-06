@@ -2,7 +2,7 @@
   "name": "cra-scaffolding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://renzomurinacadierno.github.io/React-RNMCColors",
+  "homepage": "https://renzomurinacadierno.github.io/React-RNMCRainbow",
   "dependencies": {
     "@material-ui/core": "^4.9.11",
     "@material-ui/icons": "^4.9.1",
