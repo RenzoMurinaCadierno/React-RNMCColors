@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/RenzoMurinaCadierno/React-RNMCColors/static/css/main.d70a901d.chunk.css",
-    "main.js": "/RenzoMurinaCadierno/React-RNMCColors/static/js/main.53de1c7d.chunk.js",
-    "main.js.map": "/RenzoMurinaCadierno/React-RNMCColors/static/js/main.53de1c7d.chunk.js.map",
-    "runtime-main.js": "/RenzoMurinaCadierno/React-RNMCColors/static/js/runtime-main.9156fcdb.js",
-    "runtime-main.js.map": "/RenzoMurinaCadierno/React-RNMCColors/static/js/runtime-main.9156fcdb.js.map",
-    "static/css/2.69b95c45.chunk.css": "/RenzoMurinaCadierno/React-RNMCColors/static/css/2.69b95c45.chunk.css",
-    "static/js/2.e78a5e8c.chunk.js": "/RenzoMurinaCadierno/React-RNMCColors/static/js/2.e78a5e8c.chunk.js",
-    "static/js/2.e78a5e8c.chunk.js.map": "/RenzoMurinaCadierno/React-RNMCColors/static/js/2.e78a5e8c.chunk.js.map",
-    "index.html": "/RenzoMurinaCadierno/React-RNMCColors/index.html",
-    "precache-manifest.f3195ce394ef8b3d23a9de6e140eef9f.js": "/RenzoMurinaCadierno/React-RNMCColors/precache-manifest.f3195ce394ef8b3d23a9de6e140eef9f.js",
-    "service-worker.js": "/RenzoMurinaCadierno/React-RNMCColors/service-worker.js",
-    "static/css/2.69b95c45.chunk.css.map": "/RenzoMurinaCadierno/React-RNMCColors/static/css/2.69b95c45.chunk.css.map",
-    "static/css/main.d70a901d.chunk.css.map": "/RenzoMurinaCadierno/React-RNMCColors/static/css/main.d70a901d.chunk.css.map",
-    "static/js/2.e78a5e8c.chunk.js.LICENSE.txt": "/RenzoMurinaCadierno/React-RNMCColors/static/js/2.e78a5e8c.chunk.js.LICENSE.txt",
-    "static/media/background.svg": "/RenzoMurinaCadierno/React-RNMCColors/static/media/background.12a2a448.svg"
+    "main.css": "//renzomurinacadierno.github.io/React-RNMCColors/static/css/main.d70a901d.chunk.css",
+    "main.js": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/main.9ad92485.chunk.js",
+    "main.js.map": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/main.9ad92485.chunk.js.map",
+    "runtime-main.js": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/runtime-main.5307057d.js",
+    "runtime-main.js.map": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/runtime-main.5307057d.js.map",
+    "static/css/2.69b95c45.chunk.css": "//renzomurinacadierno.github.io/React-RNMCColors/static/css/2.69b95c45.chunk.css",
+    "static/js/2.e78a5e8c.chunk.js": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/2.e78a5e8c.chunk.js",
+    "static/js/2.e78a5e8c.chunk.js.map": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/2.e78a5e8c.chunk.js.map",
+    "index.html": "//renzomurinacadierno.github.io/React-RNMCColors/index.html",
+    "precache-manifest.4c67ea5ce4bc5caea5d55f0a2590db56.js": "//renzomurinacadierno.github.io/React-RNMCColors/precache-manifest.4c67ea5ce4bc5caea5d55f0a2590db56.js",
+    "service-worker.js": "//renzomurinacadierno.github.io/React-RNMCColors/service-worker.js",
+    "static/css/2.69b95c45.chunk.css.map": "//renzomurinacadierno.github.io/React-RNMCColors/static/css/2.69b95c45.chunk.css.map",
+    "static/css/main.d70a901d.chunk.css.map": "//renzomurinacadierno.github.io/React-RNMCColors/static/css/main.d70a901d.chunk.css.map",
+    "static/js/2.e78a5e8c.chunk.js.LICENSE.txt": "//renzomurinacadierno.github.io/React-RNMCColors/static/js/2.e78a5e8c.chunk.js.LICENSE.txt",
+    "static/media/background.svg": "//renzomurinacadierno.github.io/React-RNMCColors/static/media/background.12a2a448.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9156fcdb.js",
+    "static/js/runtime-main.5307057d.js",
     "static/css/2.69b95c45.chunk.css",
     "static/js/2.e78a5e8c.chunk.js",
     "static/css/main.d70a901d.chunk.css",
-    "static/js/main.53de1c7d.chunk.js"
+    "static/js/main.9ad92485.chunk.js"
   ]
 }

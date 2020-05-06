@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/RenzoMurinaCadierno/React-RNMCColors/precache-manifest.f3195ce394ef8b3d23a9de6e140eef9f.js"
+  "//renzomurinacadierno.github.io/React-RNMCColors/precache-manifest.4c67ea5ce4bc5caea5d55f0a2590db56.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/RenzoMurinaCadierno/React-RNMCColors/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("//renzomurinacadierno.github.io/React-RNMCColors/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
