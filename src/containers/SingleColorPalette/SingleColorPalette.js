@@ -51,8 +51,7 @@ class SingleColorPalette extends Component {
           {colorBoxes}
           <div className={GoBack}>
             <Link to={`/palette/${id}`} className="back-button">
-              {" "}
-              Back{" "}
+              Back
             </Link>
           </div>
         </div>
