@@ -2,7 +2,7 @@
 
 A Color Palette generator web app to save your customized palettes and copy color codes in diverse formats.
 
-Working example [here](https://github.com/RenzoMurinaCadierno/React-RNMCRainbow)
+Working example [here](https://renzomurinacadierno.github.io/React-RNMCRainbow/)
 
 ## Overview
 
